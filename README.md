@@ -13,7 +13,7 @@ Assume we are interested in creating a smart lawn mowing machine called SLMM (sm
 
 Please just sleep the thread for the specified duration above to represent\simulate work being done.
 
-The application you will create should be able to accept the above commands and do them. Since you do not have access to the actual hardware, for now the only thing required is to accept input from console and write the status at the end of the action in the console (write the completed action along with the position of the SLMM as per the acceptance tests below). During application startup, the SLMM is given a set of dimensions (passed in as command line parameters) that represent the width and length of the garden that the SLMM is in.
+The application you will create should be able to accept the above commands and execute them. Since you do not have access to the actual hardware, for now the only thing required is to accept input from console and write the status at the end of the action in the console (write the completed action along with the position of the SLMM as per the acceptance tests below). During application startup, the SLMM is given a set of dimensions (passed in as command line parameters) that represent the width and length of the garden that the SLMM is in.
 
 ### Commands accepted
 1. TL -> Turn Left
@@ -33,7 +33,7 @@ Step 2 – senior & lead server-side positions
 Please complete the above first. After you finished the above, you are to enhance it with the following:
 1. The application should now be changed to accept input via Http. You are advised to use ASP.Net Web API, but you are free to use any web framework of your choice. The output should still be in the console.
 2. Since now this is an ASP.Net Web API, the size of the lawn should be passed in through an action method specifically for this purpose.
-3. All commands should be done asynchronously and all action methods should just return a correlation id.
+3. All commands should be done asynchronously and all POST or PUT action methods should just return a correlation id.
 4. The commands should be done on a FIFO manner.
 5. There should be two applications, one that runs in SLMM and one that represents the client and will be used by administrator(s) to control the SLMM. See below for accepted commands and exposed action methods.
 
