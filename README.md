@@ -18,7 +18,7 @@ The application you will create should be able to accept the above commands and 
 4. ML -> Mow Lawn
 
 ### Deliverable
-One console application that represents the application as described. You should provide access to an online repository that contains all source code for this application, along with complete instructions on how to build your application locally. If any tests or libraries were written, please provide code for all and full instructions on how to run the build and tests.
+One console application that represents the application as described. You should provide access to an online repository, based on this one that contains all source code for this application, along with complete instructions on how to build your application locally. If any tests or libraries were written, please provide code for all and full instructions on how to run the build and tests.
 
 ### Acceptance criteria
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
@@ -48,7 +48,7 @@ Please complete the above first. After you finished the above, you are to enhanc
 4. /mower Method: PUT Payload {"On": boolean}
 
 ### Deliverables
-One console application that represents the application that is run in the SLMM and one console application that accepts command input from console and communicates it to the SLMM application via Http along with all supporting libraries. Again, you should provide access to an online repository that hosts all code for all applications, libraries and test projects. The readme should have all necessary information on how to build, run and test the solution.
+First provide the deliverables for Step 1 independantly. Then provide one console application that represents the application that is run in the SLMM and one console application that accepts command input from console and communicates it to the SLMM application via Http along with all supporting libraries. Again, you should provide access to an online repository that hosts all code for all applications, libraries and test projects (we recommend this to be in another branch than the one for step 1). The readme should have all necessary information on how to build, run and test the solution.
 
 ### Acceptance criteria
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
@@ -66,4 +66,4 @@ We do not want to disclose exactly how we evaluate, but decisions will be made b
 3. Maintainability
 4. Following standards & practices
 
-If the program does not run successfully, the application will be rejected.
+If the program does not build with the instructions provided, or it does not run successfully, the application will be rejected immediatly.
