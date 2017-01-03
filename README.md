@@ -78,3 +78,5 @@ We do not want to disclose exactly how we evaluate, but decisions will be made b
 5. For senior engineers, the documement with comments provided will be taken into heavy consideration
 
 If the program does not build with the instructions provided, or it does not run successfully, the application will be rejected immediately.
+
+If there is anything unclear or if you have any queries, please create an issue on this repository for the team to address.
