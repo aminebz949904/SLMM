@@ -4,6 +4,7 @@ SLMM - The coding exercise for server side applicants
 Step 1 – all server-side positions
 ----------------------------------
 Assume we are interested in creating a smart lawn mowing machine called SLMM (smart lawn mowing machine). Your task is to create the software that will run in the SLMM itself and will be responsible of doing the following actions:
+
 1. Turn the SLMM 90o left or right -> This should take 15 seconds to do
 2. Move forward by one position -> This takes 30 seconds to do
 3. Mow the lawn at the current position -> This takes 120 seconds to do
@@ -59,6 +60,7 @@ One console application that represents the application that is run in the SLMM 
 Assessment criteria
 ===================
 We do not want to disclose exactly how we evaluate, but decisions will be made based on the following:
+
 1. Structure of program
 2. Testing and testing strategy
 3. Maintainability
