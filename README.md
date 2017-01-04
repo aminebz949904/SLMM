@@ -60,7 +60,7 @@ It is expected that the work done will still require a thread to sleep for the d
 ### Deliverables
 First provide the deliverables for Step 1 independently. Then, as a separate branch provide one console application that represents the application that is run in the SLMM and one console application that accepts command input from console and communicates it to the SLMM application via Http along with all supporting libraries. Again, you should provide access to an online repository that hosts all code for all applications, libraries and test projects. The readme should have all necessary information on how to build, run and test the solution.
 
-As a senior engineer, you are expected to provide meaningful input to the design of our solutions. As such it is required that you will also provide a short document which explains any assumptions and\or decisions made. You are also highly encouraged to comment on anything you found interesting or important.
+As a senior engineer, you are expected to provide meaningful input to the design of our solutions. As such it is required that you will also provide a short document which explains any assumptions and\or decisions made. You are also highly encouraged to comment on anything you found interesting or important. **Please attach this in email and do not include it in the PR**
 
 ### Acceptance criteria
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
