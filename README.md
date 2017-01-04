@@ -24,6 +24,8 @@ The application you will create should be able to accept the above commands and 
 ### Deliverable
 One console application that represents the application as described. You should provide access to an online repository, based on this one that contains all source code for this application, along with complete instructions on how to build your application locally. If any tests or libraries were written, please provide code for all and full instructions on how to run the build and tests.
 
+You are encouraged to provide a short document describing any assumptions and decisions you made during the development of this exercise. You can also do this in code comments if you prefer.
+
 ### Acceptance criteria
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
 2. The output of the SLMM after it finished each action must be in the format: “{Time} – {Action taken place} – {current location of SLMM}”. This should only be written after the action has finished taking place.
@@ -48,7 +50,7 @@ It is expected that the work done will still require a thread to sleep for the d
 ### Action methods exposed by SLMM
 1. /lawn Method: POST. Payload: {"StartX": int, "StartY": int, "SizeX": int, "SizeY": int}
 2. /lawn Method: GET. Payload: {"SizeX": int, "SizeY": int}
-3. /location Method: PUT. Payload: {"Units": int} -> the units are the distance to move in the currently facing direction.
+3. /location Method: PUT. Payload: {"MoveBy": int} -> MoveBy represents the distance to move in the currently facing direction.
 4. /location Method: GET. Reply: {"X": int, "Y": int} -> returns the current location of the SLMM
 5. /rotation Method: PUT. Payload: {"Direction": string} -> directions accepted are North, East, South, West
 6. /rotation Method: GET. Reply: {"Direction": string} -> returns the current directions of the SLMM and is one of North, East, South, West
@@ -58,7 +60,7 @@ It is expected that the work done will still require a thread to sleep for the d
 ### Deliverables
 First provide the deliverables for Step 1 independently. Then, as a separate branch provide one console application that represents the application that is run in the SLMM and one console application that accepts command input from console and communicates it to the SLMM application via Http along with all supporting libraries. Again, you should provide access to an online repository that hosts all code for all applications, libraries and test projects. The readme should have all necessary information on how to build, run and test the solution.
 
-As a senior engineer, you are expected to provide meaningful input to the design of our solutions. As such it is expected that you will also provide a short document which explains any decisions made. You are also encouraged to comment on anything you found interesting or important.
+As a senior engineer, you are expected to provide meaningful input to the design of our solutions. As such it is required that you will also provide a short document which explains any assumptions and\or decisions made. You are also highly encouraged to comment on anything you found interesting or important.
 
 ### Acceptance criteria
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
@@ -75,7 +77,7 @@ We do not want to disclose exactly how we evaluate, but decisions will be made b
 2. Testing and testing strategy
 3. Maintainability
 4. Following standards & practices
-5. For senior engineers, the documement with comments provided will be taken into heavy consideration
+5. For senior engineers, the documement with comments provided will be taken into _heavy_ consideration
 
 If the program does not build with the instructions provided, or it does not run successfully, the application will be rejected immediately.
 
