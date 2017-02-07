@@ -3,7 +3,7 @@ SLMM - The coding exercise for server side applicants
 
 You are encouraged to take no more than 5 hours to implement this, but you are free to take less or more if you want to. Please do not overengineer this exercise, but you are welcome to demonstrate knowledge in a field that can influence this project.
 
-Step 1 – all server-side positions
+Problem 1 – Non-senior positions
 ----------------------------------
 Assume we are interested in creating a smart lawn mowing machine called SLMM (smart lawn mowing machine). Your task is to create the software that will run in the SLMM itself and will be responsible for doing the following actions:
 
@@ -11,7 +11,7 @@ Assume we are interested in creating a smart lawn mowing machine called SLMM (sm
 2. Move forward by one position -> This takes 30 seconds to do
 3. Mow the lawn at the current position -> This takes 120 seconds to do
 
-Please just sleep the thread for the specified duration above to represent\simulate work being done.
+To emulate work being done, please use a thread. The thread should sleep for the specified duration above.
 
 The application you will create should be able to accept the above commands and execute them. Since you do not have access to the actual hardware, for now the only thing required is to accept input from console and write the status at the end of the action in the console (write the completed action along with the position of the SLMM as per the acceptance tests below). During application startup, the SLMM is given a set of dimensions (passed in as command line parameters) that represent the width and length of the garden that the SLMM is in.
 
@@ -30,16 +30,17 @@ You are encouraged to provide a short document describing any assumptions and de
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
 2. The output of the SLMM after it finished each action must be in the format: “{Time} – {Action taken place} – {current location of SLMM}”. This should only be written after the action has finished taking place.
 
-Step 2 – senior & lead server-side positions
+Problem 2 – senior & lead server-side positions
 -------------------------------------
-Please complete the above first. After you finished the above, you are to enhance it with the following:
-1. The application should now be changed to accept input via Http. You are advised to use ASP.Net Web API, but you are free to use any web framework of your choice. The output should still be in the console.
-2. Since now this is an ASP.Net Web API, the size of the lawn should be passed in through an action method specifically for this purpose.
-3. All commands should be done asynchronously and all POST or PUT action methods should just return a correlation id.
-4. The commands should be done on a FIFO manner.
-5. There should be two applications, one that runs in SLMM and one that represents the client and will be used by administrator(s) to control the SLMM. See below for accepted commands and exposed action methods.
+Please read the above problem first for some background context, but please do not implement it. After you have done so, consider the below changes to the above requirements:
+1. The application needs to be split to a server and a client.
+2. The server should be changed to accept input via Http. You are advised to use ASP.Net Web API, but you are free to use any web framework of your choice. The output should still be in the console.
+3. In a server setup, we want the size of the lawn to be passed in through an action method specifically for this purpose.
+4. All commands should be executed (and work emulated) asynchronously and all POST or PUT action methods should return a correlation id (which is not used in this exercise but it is a requirement for it to exist).
+5. The commands should be executed on a FIFO manner.
+6. There should be two applications, one that runs in SLMM (server) and one that represents the client. The client one will be used by administrator(s) to control the SLMM. See below for accepted commands and exposed action methods.
 
-It is expected that the work done will still require a thread to sleep for the duration mentioned in Step 1.
+It is expected that the work done will still require a thread to sleep for the duration mentioned in Step 1 to emulate work being done.
 
 ### Commands accepted by SLMM client
 1. TL -> Turn Left
@@ -58,7 +59,7 @@ It is expected that the work done will still require a thread to sleep for the d
 8. /mower Method: GET Payload {"On": boolean} returns true or false depending if the mower is currently mowing lawn.
 
 ### Deliverables
-First provide the deliverables for Step 1 independently. Then, as a separate branch provide one console application that represents the application that is run in the SLMM and one console application that accepts command input from console and communicates it to the SLMM application via Http along with all supporting libraries. Again, you should provide access to an online repository that hosts all code for all applications, libraries and test projects. The readme should have all necessary information on how to build, run and test the solution.
+Provide one console application that represents the server application which emulates the work of SLMM and one console application that accepts command input from console and communicates it to the SLMM server application via Http. You should provide access to an online repository that hosts all code for all applications, libraries and test projects. The readme should have all necessary information on how to build, run and test the solution. We should be able to follow 
 
 As a senior engineer, you are expected to provide meaningful input to the design of our solutions. As such it is required that you will also provide a short document which explains any assumptions and\or decisions made. You are also highly encouraged to comment on anything you found interesting or important. **Please attach this in email and do not include it in the PR**
 
