@@ -3,7 +3,7 @@ SLMM - The coding exercise for server side applicants
 
 You are encouraged to take no more than 5 hours to implement this, but you are free to take less or more if you want to. Please do not overengineer this exercise, but you are welcome to demonstrate knowledge in a field that can influence this project.
 
-Problem 1 – Non-senior positions
+1 - Exercise for junior and mid-level positions
 ----------------------------------
 Assume we are interested in creating a smart lawn mowing machine called SLMM (smart lawn mowing machine). Your task is to create the software that will run in the SLMM itself and will be responsible for doing the following actions:
 
@@ -24,13 +24,15 @@ The application you will create should be able to accept the above commands and 
 ### Deliverable
 One console application that represents the application as described. You should provide access to an online repository, based on this one that contains all source code for this application, along with complete instructions on how to build your application locally. If any tests or libraries were written, please provide code for all and full instructions on how to run the build and tests.
 
+You are encouraged to provide a short document describing any assumptions and decisions you made during the development of this exercise. You can also do this in code comments if you prefer.
+
 ### Acceptance criteria
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
 2. The output of the SLMM after it finished each action must be in the format: “{Time} – {Action taken place} – {current location of SLMM}”. This should only be written after the action has finished taking place.
 
-Problem 2 – senior & lead server-side positions
+2 – Exercise for senior & lead server-side positions
 -------------------------------------
-Please read the above problem first for some background context, but please do not implement it. After you have done so, consider the below changes to the above requirements:
+Please read the exercise for juniors first for some background context, but please do not implement it. After you have read the above, consider the below changes to the above requirements:
 
 1. The application needs to be split to a server and a client.
 1. The server should be changed to accept input via Http. You are advised to use ASP.Net Web API, but you are free to use any web framework of your choice. The output should still be in the console.
@@ -50,7 +52,7 @@ It is expected that the work done will still require a thread to sleep for the d
 ### Action methods exposed by SLMM
 1. /lawn Method: POST. Payload: {"StartX": int, "StartY": int, "SizeX": int, "SizeY": int}
 2. /lawn Method: GET. Payload: {"SizeX": int, "SizeY": int}
-3. /location Method: PUT. Payload: {"Units": int} -> the units are the distance to move in the currently facing direction.
+3. /location Method: PUT. Payload: {"MoveBy": int} -> MoveBy represents the distance to move in the currently facing direction.
 4. /location Method: GET. Reply: {"X": int, "Y": int} -> returns the current location of the SLMM
 5. /rotation Method: PUT. Payload: {"Direction": string} -> directions accepted are North, East, South, West
 6. /rotation Method: GET. Reply: {"Direction": string} -> returns the current directions of the SLMM and is one of North, East, South, West
@@ -60,7 +62,7 @@ It is expected that the work done will still require a thread to sleep for the d
 ### Deliverables
 Provide one console application that represents the server application which emulates the work of SLMM and one console application that accepts command input from console and communicates it to the SLMM server application via Http. You should provide access to an online repository that hosts all code for all applications, libraries and test projects. The readme should have all necessary information on how to build, run and test the solution. We should be able to follow 
 
-As a senior engineer, you are expected to provide meaningful input to the design of our solutions. As such it is expected that you will also provide a short document which explains any decisions made. You are also encouraged to comment on anything you found interesting or important.
+As a senior engineer, you are expected to provide meaningful input to the design of our solutions. As such it is required that you will also provide a short document which explains any assumptions and\or decisions made. You are also highly encouraged to comment on anything you found interesting or important. **Please attach this in email and do not include it in the PR**
 
 ### Acceptance criteria
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
@@ -77,6 +79,8 @@ We do not want to disclose exactly how we evaluate, but decisions will be made b
 2. Testing and testing strategy
 3. Maintainability
 4. Following standards & practices
-5. For senior engineers, the documement with comments provided will be taken into heavy consideration
+5. For senior engineers, the documement with comments provided will be taken into _heavy_ consideration
 
 If the program does not build with the instructions provided, or it does not run successfully, the application will be rejected immediately.
+
+If there is anything unclear or if you have any queries, please create an issue on this repository for the team to address.
