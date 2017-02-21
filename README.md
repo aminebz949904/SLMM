@@ -3,7 +3,7 @@ SLMM - The coding exercise for server side applicants
 
 You are encouraged to take no more than 5 hours to implement this, but you are free to take less or more if you want to. Please do not overengineer this exercise, but you are welcome to demonstrate knowledge in a field that can influence this project.
 
-Problem 1 – Non-senior positions
+1 - Exercise for junior and mid-level positions
 ----------------------------------
 Assume we are interested in creating a smart lawn mowing machine called SLMM (smart lawn mowing machine). Your task is to create the software that will run in the SLMM itself and will be responsible for doing the following actions:
 
@@ -30,9 +30,9 @@ You are encouraged to provide a short document describing any assumptions and de
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
 2. The output of the SLMM after it finished each action must be in the format: “{Time} – {Action taken place} – {current location of SLMM}”. This should only be written after the action has finished taking place.
 
-Problem 2 – senior & lead server-side positions
+2 – exercise for senior & lead server-side positions
 -------------------------------------
-Please read the above problem first for some background context, but please do not implement it. After you have done so, consider the below changes to the above requirements:
+Please read the exercise for juniors first for some background context, but please do not implement it. After you have read the above, consider the below changes to the above requirements:
 1. The application needs to be split to a server and a client.
 2. The server should be changed to accept input via Http. You are advised to use ASP.Net Web API, but you are free to use any web framework of your choice. The output should still be in the console.
 3. In a server setup, we want the size of the lawn to be passed in through an action method specifically for this purpose.
