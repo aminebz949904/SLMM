@@ -30,7 +30,7 @@ You are encouraged to provide a short document describing any assumptions and de
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
 2. The output of the SLMM after it finished each action must be in the format: “{Time} – {Action taken place} – {current location of SLMM}”. This should only be written after the action has finished taking place.
 
-2 – Exercise for senior & lead server-side positions
+2 – Exercise for senior server-side positions
 -------------------------------------
 Please read the exercise for juniors first for some background context, but please do not implement it. After you have read the above, consider the below changes to the above requirements:
 
