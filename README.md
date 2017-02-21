@@ -30,15 +30,16 @@ You are encouraged to provide a short document describing any assumptions and de
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
 2. The output of the SLMM after it finished each action must be in the format: “{Time} – {Action taken place} – {current location of SLMM}”. This should only be written after the action has finished taking place.
 
-2 – exercise for senior & lead server-side positions
+2 – Exercise for senior & lead server-side positions
 -------------------------------------
 Please read the exercise for juniors first for some background context, but please do not implement it. After you have read the above, consider the below changes to the above requirements:
+
 1. The application needs to be split to a server and a client.
-2. The server should be changed to accept input via Http. You are advised to use ASP.Net Web API, but you are free to use any web framework of your choice. The output should still be in the console.
-3. In a server setup, we want the size of the lawn to be passed in through an action method specifically for this purpose.
-4. All commands should be executed (and work emulated) asynchronously and all POST or PUT action methods should return a correlation id (which is not used in this exercise but it is a requirement for it to exist).
-5. The commands should be executed on a FIFO manner.
-6. There should be two applications, one that runs in SLMM (server) and one that represents the client. The client one will be used by administrator(s) to control the SLMM. See below for accepted commands and exposed action methods.
+1. The server should be changed to accept input via Http. You are advised to use ASP.Net Web API, but you are free to use any web framework of your choice. The output should still be in the console.
+1. In a server setup, we want the size of the lawn to be passed in through an action method specifically for this purpose.
+1. All commands should be executed (and work emulated) asynchronously and all POST or PUT action methods should return a correlation id (which is not used in this exercise but it is a requirement for it to exist).
+1. The commands should be executed on a FIFO manner.
+1. There should be two applications, one that runs in SLMM (server) and one that represents the client. The client one will be used by administrator(s) to control the SLMM. See below for accepted commands and exposed action methods.
 
 It is expected that the work done will still require a thread to sleep for the duration mentioned in Step 1 to emulate work being done.
 
