@@ -50,8 +50,9 @@ As a senior engineer, you are expected to provide meaningful input to the design
 ### Acceptance criteria
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
 1. The SLMM behaves consistently
-1. The output of the SLMM application for each action must be in the format: “{Time} – {Action to take\has taken place} – {current location of SLMM}”. 
-  For example: "12:05:12 - Start Turn Left - (5,2)" and after the action finished "12:05:27 - End Turn Left - (5,2)"
+1. The SLMM should write some messages for debugging purposes for any and all input. This can be either console, a file (through logging for example or manually if this is easier for you) or Debug window in VS. Any one will do. 
+1. The format of the debugging messages required on above point should be: “{Time} – {Action to take\has taken place} – {current location of SLMM}”. 
+  For example: "12:05:12 - Start Move Left - (5,2)" and after the action finished "12:05:22 - End Move Left - (5,2)". You are free to deviate from this format, but explain your reasons.
  
 Assessment criteria
 ===================
