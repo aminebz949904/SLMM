@@ -43,11 +43,17 @@ Assume we are interested in creating a smart lawn mowing machine called SLMM (sm
 All move actions take one second to perform. Please emulate this using Thread.Sleep or Task.Wait in your code.
 
 ### Deliverables
-Provide one application that represents the server application exposed through a Restfull API (you are free to use any web framework of your choice) which emulates the work of SLMM and one console application that accepts command input from console and communicates it to the SLMM server application. You should provide access to an online repository that hosts all code for all applications, libraries and test projects. The readme should have all necessary information on how to build, run and test the solution.
 
-As a senior engineer, you are expected to provide meaningful input to the design of our solutions. As such it is required that you will also provide a short document which explains any assumptions and\or decisions made. You are also highly encouraged to comment on anything you found interesting or important. **Please attach this in email and do not include it in the PR**
+1. One application that represents the server application exposed through a Restfull API (you are free to use any web framework of your choice) which emulates the work of SLMM. This should contain any and all logic encompassing the operation (and validations) of the SLMM. This would allow multiple clients to control the SLMM in parallel.
+1. One console application that accepts command input from console and communicates it to the SLMM server application. 
+1. Documentation about how to build, run and test the solution.
+1. Any and all automated testing code that you wrote
+1. As a senior engineer, you are expected to provide meaningful input to the design of our solutions. As such it is required that you will also provide a short document which explains any assumptions and\or decisions made. You are also highly encouraged to comment on anything you found interesting or important. **Please attach this in email and do not include it in the PR**
+
+You should provide access to an online repository that hosts all code for all applications, libraries and test projects. The readme should have all necessary information on how to build, run and test the solution.
 
 ### Acceptance criteria
+1. The SLMM logic resides in the server application
 1. The SLMM never goes outside of the dimensions of the garden as supplied during startup
 1. The SLMM behaves consistently
 1. The SLMM should write some messages for debugging purposes for any and all input. This can be either console, a file (through logging for example or manually if this is easier for you) or Debug window in VS. Any one will do. 
@@ -58,13 +64,14 @@ Assessment criteria
 ===================
 We do not want to disclose exactly how we evaluate, but decisions will be made based on the following:
 
+1. Following the acceptance criteria
 1. Structure of program
 1. Testing and testing strategy
 1. Maintainability
 1. Following standards & practices
 1. The documement with comments provided will be taken into _heavy_ consideration
 
-If the program does not build with the instructions provided, or it does not run successfully, the application will be rejected immediately.
+**Please note**: If the program does not build with the instructions provided, or it does not run successfully, the application will be rejected immediately.
 
 If there is anything unclear or if you have any queries, please create an issue on this repository for the team to address.
 
