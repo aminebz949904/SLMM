@@ -1,7 +1,7 @@
 SLMM - The coding exercise for server side applicants
 =====================================================
 
-You are encouraged to take no more than 5 hours to implement this, but you are free to take less or more if you want to. Please do not overengineer this exercise, but you are welcome to demonstrate knowledge in a field that can influence this project.
+Please do not overengineer this exercise, but you are welcome to demonstrate knowledge in a field that can influence this project.
 
 ### Short description
 Assume we are interested in creating a smart lawn mowing machine called SLMM (smart lawn mowing machine). Your task is to create the software that will run in the SLMM itself and will be responsible for doing the following actions:
