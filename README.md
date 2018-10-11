@@ -5,7 +5,7 @@ Please do not overengineer this exercise, but at the same time try to demonstrat
 
 ### Short description
 Assume we are interested in creating a smart lawn mowing machine called SLMM (smart lawn mowing machine).
-The SLMM operates in a rectangular garden that is a grid with dimension `Length x Width`; SLMM can move forward
+The SLMM operates in a rectangular garden that is a grid with dimensions `Length x Width`; SLMM can move forward
 to the next grid cell or turn 90° left or right.
 
 Your task is to create the software that will run in the SLMM itself and will be responsible for doing the following actions:
