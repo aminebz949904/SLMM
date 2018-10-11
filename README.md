@@ -15,7 +15,8 @@ Your task is to create the software that will run in the SLMM itself and will be
 
 To emulate work being done, please use `Sleep`.
 
-You are expected to create a web API that will accept the above commands, and execute them. During application startup, the SLMM is given a set of dimensions (passed in through config) that represent the width and length of the garden that the SLMM is in.
+You are expected to create a web API that will accept the above commands, and execute them. During application startup,
+the SLMM is given dimensions of the garden wher it operates (`length`, `width`), and initial position `(x,y,orientation)` - location in the garden (grid cell coordinates) and orientation (`North`/`East`/`South`/`West`). These settings can be passed in through a configuration file.
 
 UI is not required for this exercise, you can use Postman, curl, or similar client to access the API.
 
@@ -25,7 +26,7 @@ Please try to not take more than 3-4 hours total on this exercise.
 1. Turn left
 1. Turn right
 1. Move one step forward
-1. Get current position (location in the garden and orientation)
+1. Get current position `(x,y,orientation)` - location in the garden (grid cell coordinates) and orientation (`North`/`East`/`South`/`West`)
 
 ### Deliverable
 A web API implemented in C# using any web framework of your choice. Automated tests must be included in the delivery.
