@@ -29,9 +29,9 @@ Please try to not take more than 3-4 hours total on this exercise.
 1. Get current position `(x,y,orientation)` - location in the garden (grid cell coordinates) and orientation (`North`/`East`/`South`/`West`)
 
 ### Deliverable
-A web API implemented in C# using any web framework of your choice. Automated tests must be included in the delivery.
+A web API implemented in C# using any web framework of your choice. Automated tests must be included in the delivery. You are free to use any nuget library you choose.
 
-Please include a short documentation explaining how to build, run and use the solution you authored. Please add a section about any decisions you made during the implementation.
+Please include a short documentation explaining how to build, run and use the solution you authored. Please add a section about any decisions you made during the implementation. If you used any library other than for DI, testing or web framework, then please add a small section explaining why.
 
 ### Acceptance criteria
 
